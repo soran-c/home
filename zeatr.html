@@ -34,6 +34,99 @@
  
  .mySlides {display:none;}
 
+
+main.cards {
+    display: flex;
+    padding: 20px;
+	
+}
+
+main.cards section.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: white;
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    max-height: 180px;
+    margin-left: 32px;
+}
+
+main.cards section.card:first-child {
+    margin-left: 0;
+}
+
+main.cards section.card .icon {
+    width: 64px;
+    height: 64px;
+}
+
+main.cards section.card img {
+    width: 100%;
+}
+
+main.cards section.card h3 {
+    font-size: 100%;
+	font-family: 'K24KurdishBold-Bold';
+    margin: 5px 0;
+	font-size: 20px;
+	line-height: 2em;
+
+}
+
+main.cards section.card span {
+    font-weight: 300;
+    max-width: 240px;
+    font-size: 80%;
+    margin-bottom: 16px;
+}
+
+main.cards section.card button {
+    padding: 0.5rem 1rem;
+    text-transform: uppercase;
+    border-radius: 32px;
+    border: 0;
+    cursor: pointer;
+    font-size: 80%;
+    font-weight: 500;
+    color: #fff;
+    margin-bottom: 16px 0;
+}
+
+ 
+
+main.cards section.card.contact {
+    box-shadow: 20px 20px 50px -30px #DBC4FF;
+}
+main.cards section.card.shop {
+    box-shadow: 20px 20px 50px -30px #AFD6FF;
+}
+main.cards section.card.about {
+    box-shadow: 20px 20px 50px -30px #FFC1D5;
+}
+
+@media screen and (max-width: 720px) {
+    main.cards {
+        flex-direction: column;
+    }
+
+    main.cards section.card {
+        margin-left: 0;
+        margin-bottom: 32px;
+    }
+
+    main.cards section.card:last-child {
+        margin-bottom: 0;
+    }
+
+    main.cards section.card button {
+        font-size: 20px;
+    }
+
+}
+
+
 	</style>
 </head>
 <body data-spy="scroll" data-target=".fixed-top">
@@ -91,33 +184,45 @@
    <br>
    <br>
    <br>
-   <br>
-   <center>
-      <span style="font-size:16px;line-height: 2; color:black; text-align:right;">ئایا ئەنجامەکان چۆن حیساب دەکرێن ؟</span><br>
-                    <span style="font-size:16px; color:black; text-decoration:none;">  <a style="text-decoration:none; color:#1995A8 ;" href="anjam.pdf"> بینین</a></span><br>
-					 
-   
-   <br>
-		<span style="font-size:16px;line-height: 2; color:black; text-align:right;">لیستی خواردن و خواردنەوەکانی کۆلێژی تەکنیکی سۆران</span><br>
-       <span style="font-size:16px; color:black; text-decoration:none;">  <a style="text-decoration:none; color:#1995A8 ;" href="kaftrya.pdf"> بینین</a></span><br>
-	 
-   <br>
-		<span style="font-size:16px;line-height: 2; color:black; text-align:right;">مۆلەتی کاتی فەرمانبەران</span><br>
-       <span style="font-size:16px; color:black; text-decoration:none;">  <a style="text-decoration:none; color:#1995A8 ;" href="molat.docx"> دابەزاندن </a></span><br>
-	
-	 
-   <br>
-		<span style="font-size:16px;line-height: 2; color:black; text-align:right;">مۆلەتی رۆژی فەرمانبەران</span><br>
-       <span style="font-size:16px; color:black; text-decoration:none;">  <a style="text-decoration:none; color:#1995A8 ;" href="molatyasae.docx"> دابەزاندن </a></span><br>
-	 
-   <br>
-		<span style="font-size:16px;line-height: 2; color:black; text-align:right;"> نموونەیەک لە سیڤی ئەتوانن کاری پێبکەن</span><br>
-       <span style="font-size:16px; color:black; text-decoration:none;">  <a style="text-decoration:none; color:#1995A8 ;" href="cv.docx">دابەزاندن</a></span><br>
-	
+   <br>   <center>
 
+   <main class="cards">
+        <section class="card contact">
+            
+            <h3>ئایا ئەنجامەکان چۆن حیساب دەکرێن ؟</h3>
+            <button><a style="text-decoration:none; color:#1995A8 ;" href="anjam.pdf"> بینین</a></button>
+
+        </section>
+		 <section class="card contact">
+            
+            <h3>لیستی خواردن و خواردنەوەکانی کۆلێژی تەکنیکی سۆران</h3>
+            <button><a style="text-decoration:none; color:#1995A8 ;" href="kaftrya.pdf"> بینین</a></button>
+
+        </section>
+		 <section class="card contact">
+            
+            <h3>مۆلەتی کاتی فەرمانبەران</h3>
+            <button><a style="text-decoration:none; color:#1995A8 ;" href="molat.docx"> بینین</a></button>
+
+        </section>
+		 <section class="card contact">
+            
+            <h3>مۆلەتی رۆژی فەرمانبەران</h3>
+            <button><a style="text-decoration:none; color:#1995A8 ;" href="molatyasae.docx"> بینین</a></button>
+
+        </section> 
+		<section class="card contact">
+            
+            <h3>نموونەیەک لە سیڤی ئەتوانن کاری پێبکەن</h3>
+            <button><a style="text-decoration:none; color:#1995A8 ;" href="cv.docx"> بینین</a></button>
+
+        </section>
+       
+    </main>
+       
 
 	</center>
-	<br>
+	 
 	<br><br>
 	<br><br>
 	<br><br>
