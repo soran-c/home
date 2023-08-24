@@ -94,7 +94,32 @@
 	-webkit-transform: scale(1.15);
 	transform: scale(1.15);
 } 
+ul {
+  list-style: none;
+  padding: 0;
+}
 
+li {
+  cursor: pointer;
+  padding-right: 18px;
+  margin: 8px;
+  text-align: right;
+  color: black;
+  
+ 
+}
+
+#info-container {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-top: 10px;
+  display: none;
+  text-align: right;
+}
+#info-container img {
+  display: block;
+  margin: 0 auto; /* Center horizontally */
+}
 	</style>
 </head>
 <body data-spy="scroll" data-target=".fixed-top">
@@ -151,81 +176,34 @@
 	<div id="bash">
 				<p> بەشەکانی کۆلێژی تەکنیکی سۆران </p>
 	</div>
+	<p align="right" style="padding-right: 18px; color:red; font-family:'K24KurdishBold-Bold'; font-size:15px;">بۆ دەست کەوتنی زانیاری لەسەر بەشەکان تکایە کلیک لەسەر بەشەکانی خوارەوە بکەن</font>
 	<br>
+	<br>
+<ul id="item-list" style="font-size:18px; line-height:2em;">
+    <li>١_  بەشی ئافرەتان و لەدایک بوون</li>
+    <li>٢_  بەشی شیکاری نەخۆشیەکان</li> 
+	<li>٣_  بەشی پەرستاری</li> 
+	<li>٤_  بەشی ژمێریاری</li> 
+	<li>٥_  بەشی تەکنەلۆجیای زانیاری</li> 
+	<li>٦_  بەشی کارگێری کار</li> 
+  </ul>
+
+  <div id="info-container"></div>
+
 	<div id="bash1">
 
-				 <p>١_  بەشی ئافرەتان و لەدایک بوون </p> 
-				 <p>٢_  بەشی شیکاری نەخۆشیەکان </p> 
-				 <p>٣_  بەشی پەرستاری </p> 
-				 <p>٤_  بەشی ژمێریاری </p> 
-				 <p>٥_  بەشی تەکنەلۆجیای زانیاری </p> 
-				 <p>٦_  بەشی کارگێری کار </p> 
+				 <p></p> 
+				 
 	</div>
 	
+	 
+	<br>
+	<br>
+	 <br>
 	<br>
 	<br>
 	<br>
-	<br>
-	<hr width="80%" color="black">
-					<center>
-						<div class="team-member">
-                        <div class="image-wrapper">
-                            <img class="img-fluid" src="images/pr.png" alt="alternative">
-                        </div> <!-- end of image-wrapper -->
-                        <p class="p-large"><strong>بەشی ئافرەتان و لەدایک بوون</strong></p>
-                        </div> 
-						<p style="color:blue; margin-left:10px; font-family: 'K24KurdishBold-Bold'; margin-right:10px; font-size:16px; text-align:right;">ئەم بەشە لە سالی ( ٢٠٠٣) ز دامەزراوە ، ئامانجی ئەم بەشە پێگەیاندنی پسپۆری شارەزایە لە پیشەی مامانی بۆ پێشکەش کردنی خزمەتگوزاریە تەندروستیەکان بۆ دایکان و مندالان لە نەخۆشخانە و بنکە تەندروستیەکان .قوتابیانی ئەم بەشە وانەکانی تیوریی و پراکتیکی و لە گەل هەفتانە خویندنی بەشیک لە وانەکانیان لە هۆلی  نەخۆشخانە فێرکاریەکاندا  بە بەشداری ماموستایانیان و دکتۆرانی نەخۆشخانە. قوتابیان دەبنە خاوەن بروانامای دیبلۆم لە  پیشەکایاندا.  دەرچوانی ئەم بەشە شارەزای تەواویان هەیە لو پیشەیی خۆیان وەك چاودیری دایکان و پاریزگاری ژیانی دایك و کۆرپەکەی و فریاکەوتنی سەرەتایی ئافرەتان و دانانی پلانی رێکخستنی خێزان ، دەرمان پێدان و دەرزی لیدان و پەروەردە و هوشیارکردنی ئافرەتان ، رێکخستنی خۆراك بۆ ئافرەتان لە کاتی سك پریدا ، هەروەها کوتانی دایکان و مندالان بۆ پاراستنیان لە خۆشیەکان  </p>
-						<hr width="80%" color="black">
-						<div class="team-member">
-                        <div class="image-wrapper">
-                            <img class="img-fluid" src="images/lab.png" alt="alternative">
-                        </div> <!-- end of image-wrapper -->
-                        <p class="p-large"><strong>بەشی شیکاری نەخۆشیەکان</strong></p>                      
-                        </div> 
-						 <p style="color:blue; margin-left:10px; font-family: 'K24KurdishBold-Bold'; margin-right:10px; font-size:16px; text-align:right;">لە سالی خویندنی ( ٢٠٠٩ - ٢٠١٠) لە پەیمانگادا ئەم بەشە دامەزرا ، لەم سالەدا یەکەمین خولی دەرچوانی بە دامودەزگا تەندروستیەکانی کوردستانی کرد . ئامانج لێی پێگەیاندنی ستافیکی تەکنیک کاری تاقیگەیی پزیشکیە لە ماوەی خویندنی ئەم دوو سالە قوتابیان دەبنە خاوەن بروانامای  ( ی.تاقیگە) بە بروانامای دیبلۆم . دەرچوانی ئەم بەشە رۆلێکی گرینگیان هەیە لە بواری پشکنینی  تاقیگەیەکاندا .  قوتابیان لەم سالانەی خونێندیاندا وانەکان بە تیۆریی و پراکتیکی و سەردانیکردنی نەخۆشخانە فێرکاریەکان و گەشتی زاستی دەبیت . بۆ بە تەکنیکی بونی قوتابی و فیربوونی پشکنینەکان بە شیوەیەکی سەردەمیانە . وەرگرتنی زانیاری زیاتر و راهێنان لە سەر کارەکانیان . وە ئەنجام دانی خولی مەشقی هاوینەی دوو مانگە لە نەخۆشخانە فێرکاریەکان دوای  تەواوکردنی قوناغی دووەم بۆ تەواو بوونی پسپۆریان لەم بوارە </p>
-
-						 
-						<hr width="80%" color="black">
-						<div class="team-member">
-                        <div class="image-wrapper">
-                            <img class="img-fluid" src="images/nurs.png" alt="alternative">
-                        </div> <!-- end of image-wrapper -->
-                        <p class="p-large"><strong>بەشی پەرستاری</strong></p>
-                        
-                        </div> 
-						<p style="color:blue; margin-left:10px; font-family: 'K24KurdishBold-Bold'; margin-right:10px; font-size:16px; text-align:right;"> ئەم بەشە لە سالی ( ٢..٢) ز دامەزراوە . ئامانجی ئەم بەشە پێگەیاندنی پسپۆری شارەزایە لە پیشەی نەخۆشەوانی دا بۆ پێشکەش کردنی خزمەت گوزاریە تەندروستیەکان سەرارەی ئەمە هەماهەنگی تەواو لە گەڵ سەرجەم نەخۆشخانە و بنکە تەندروستیەکانی سۆران هەیە بۆ مەشق کردنی قوتابییان لەکاتی خویندن و مەشقی هاوینە.دەرچوانی ئەم بەشە شارەزایی تەواویان هەیە لە پیشەیی خۆیان و برین پێچی ، دەرزی لێدان ، دەرمان پێدان ، ئامادەکردنی نەخۆش بۆ نەشتەرگەری ، فریاکەوتنی سەرەتایی، چاودێریکردنی نەخۆش لە هۆلی نەخۆشخانەکان </p>
-
-						<hr width="80%" color="black">
-						<div class="team-member">
-                        <div class="image-wrapper">
-                            <img class="img-fluid" src="images/acc.png" alt="alternative">
-                        </div> 
-                        <p class="p-large"><strong>بەشی ژمێریاری</strong></p>
-                        </div> 
-						<p style="color:blue; margin-left:10px; font-family: 'K24KurdishBold-Bold'; margin-right:10px; font-size:16px; text-align:right;">ئه‌م به‌شه‌ بۆ ساڵی خوێندنی (٢٠١١ - ٢٠١٢) له‌سه‌ر داوای ئه‌نجومه‌نی په‌یمانگای ته‌كنیكی سۆران و به‌ ره‌زامه‌ندی (ده‌سته‌ی خوێندنی ته‌كنیكی-هه‌وڵیر) كراوه‌ته‌وه‌ ، ئامانجی پێگه‌یاندنی كادیری ناوه‌ندیه‌ له‌ بواری ژمێریاری و پڕكردنه‌وه‌ی بۆشایی نه‌بوونی پسپۆڕی ژمێریاریه‌ له‌ داموده‌زگا میری و تایبه‌تیه‌كان، ده‌رچووانی دوای بینینی وانه‌ی تیۆری پراكتیكی له‌بابه‌ته‌كانی تایبه‌ت به‌ بنه‌ماو میتۆدو رێكاره‌كانی كاری ژمێریاری به‌ شێوه‌یه‌كی زانستی و به‌ پێی ستاندارد و دواین پێشكه‌وتنه‌كانی ئه‌و بواره‌، پاش دوو ساڵ بڕوانامه‌ی دیبلۆمیان پێده‌درێت. </p>
-						
-
-						<hr width="80%" color="black">
-						<div class="team-member">
-                        <div class="image-wrapper">
-                            <img class="img-fluid" src="images/it.png" alt="alternative">
-                        </div> <!-- end of image-wrapper -->
-                        <p class="p-large"><strong>بەشی تەکنەلۆجیای زانیاری</strong></p>
-                        </div> 
-					<p style="color:blue; margin-left:10px; font-family: 'K24KurdishBold-Bold'; margin-right:10px; font-size:16px; text-align:right;">ئامانج لێی پێگەیاندنی ستافیکی تەکنیکی و فێربوونی پرۆگرامەکانی کۆمپیوتەر و زمانەکانی کۆمپیوتەر لە ماوەی خویندنی ئەم دوو سالە قوتابیان دەبنە خاوەن بروانامای دیبلۆم . دەرچوانی ئەم بەشە رۆلێکی گرینگیان هەیە لە بواری دروست کردنی پرۆگرامەکان و کارکردنیان لە کۆمپانیا و کەنالەکان  . قوتابیان لەم سالانەی خونێندیاندا وانەکان بە تیۆریی و پراکتیکی و سەردانی کردنیان بۆ کەنالەکان و کۆلێژە تەکنەلۆژیایەکان . بۆ بە تەکنیکی بونی قوتابی و فیربوون و وەرگرتنی زانیاری زیاتر لە بوارەکەیان . وە ئەنجام دانی خولی مەشقی هاوینەی دوو مانگە دوای تەواوکردنی قوناغی دووەم بۆ  تەواو بوونی پسپۆریان لەم بوارە</p>
-						<hr width="80%" color="black">
-						<div class="team-member">
-                        <div class="image-wrapper">
-                            <img class="img-fluid" src="images/kar.png" alt="alternative">
-                        </div> <!-- end of image-wrapper -->
-                        <p class="p-large"><strong>بەشی کارگێری کار</strong></p>
-                        
-						 </div> 
-						 <p style="color:blue; margin-left:10px; font-family: 'K24KurdishBold-Bold'; margin-right:10px; font-size:16px; text-align:right;">
-له‌سه‌ر بڕیاری سه‌روكایه‌تی ده‌سته‌ی په‌یمانگا ته‌كنیكیه‌كان به‌شی بەرێوەبردنی كار له‌ ساڵی خوێندنی ( ٢٠٠٤ – ٢٠٠٥ ) كرایه‌وه‌، ئامانجی ئه‌م به‌شه‌ ئه‌وه‌یه‌ كه‌ بتوانی كۆمه‌ڵێك قوتابی پێبگه‌یه‌نێن وه‌ك كادیری به‌رێوبڕدن، پێشكه‌ش به‌ ره‌وتی به‌ره‌وپێش بردنی كۆمه‌ڵگای‌ كوردستان بكات. بێگومان كوردستان له‌ قوناغی ئاوادانكردنه‌وه‌و و گه‌شه‌كردندایه‌ پێو‌یستی به‌ كادیری لیهاتووی به‌رێوبڕدن هه‌یه‌، ده‌رچوانی ئه‌م به‌شه‌ شاره‌زایه‌كی ته‌واویان هه‌یه له‌ به‌ڕێوبردنی داموده‌زگاكانی میری و تایبه‌تی ده‌توانن سه‌رپه‌رشتی هه‌ر پرۆژه‌یه‌ك بكه‌ن بۆ ئه‌وه‌ی سه‌ركه‌وتوانه‌ به‌ڕێوه‌بچێت.
-</p>
-					</center>
-    <!-- Copyright -->
+ 
     <div class="copyright">
         <div class="container">
             <div class="row">
@@ -249,5 +227,90 @@
     <script src="js/jquery.magnific-popup.js"></script>
     <script src="js/validator.min.js"></script> 
     <script src="js/scripts.js"></script> 
+	
+    <script>
+	const itemList = document.getElementById('item-list');
+const infoContainer = document.getElementById('info-container');
+
+itemList.addEventListener('click', (event) => {
+  if (event.target.tagName === 'LI') {
+    const info = getInfoText(event.target.textContent);
+    infoContainer.innerHTML = info;
+    infoContainer.style.display = 'block';
+  }
+});
+
+function getInfoText(itemText) {
+  // Add your custom logic here to return information based on the clicked item's text.
+  // You can use the itemText parameter to identify the clicked item and return the relevant information.
+  switch (itemText) {
+    case '١_  بەشی ئافرەتان و لەدایک بوون':
+      return `
+           
+                            <img class="img-fluid" src="images/pr.jpg" alt="alternative" width="200"  style="border-radius:10px;">
+                  <br>
+                  <br>
+        <p style="color:blue; margin-left:10px; font-family: 'K24KurdishBold-Bold'; margin-right:10px; font-size:16px; text-align:right;">ئەم بەشە لە سالی ( ٢٠٠٣) ز دامەزراوە ، ئامانجی ئەم بەشەپێگەیاندنی پسپۆری شارەزایە لە پیشەی مامانی بۆ پێشکەش کردنی خزمەتگوزاریە تەندروستیەکان بۆ دایکان و مندالان لە نەخۆشخانە و بنکە تەندروستیەکان .قوتابیانی ئەم بەشە وانەکانی تیوریی و پراکتیکی و لە گەل هەفتانە خویندنی بەشیک لە وانەکانیان لە هۆلی  نەخۆشخانە فێرکاریەکاندا  بە بەشداری ماموستایانیان و دکتۆرانی نەخۆشخانە. قوتابیان دەبنە خاوەن بروانامای دیبلۆم لە  پیشەکایاندا.  دەرچوانی ئەم بەشە شارەزای تەواویان هەیە لو پیشەیی خۆیان وەك چاودیری دایکان و پاریزگاری ژیانی دایك و کۆرپەکەی و فریاکەوتنی سەرەتایی ئافرەتان و دانانی پلانی رێکخستنی خێزان ، دەرمان پێدان و دەرزی لیدان و پەروەردە و هوشیارکردنی ئافرەتان ، رێکخستنی خۆراك بۆ ئافرەتان لە کاتی سك پریدا ، هەروەها کوتانی دایکان و مندالان بۆ پاراستنیان لە خۆشیەکان</p>
+      `;
+	  
+    case '٢_  بەشی شیکاری نەخۆشیەکان':
+      return `
+           
+                            <img class="img-fluid" src="images/lab.png" alt="alternative" width="200"  style="border-radius:10px;">
+                  <br>
+                  <br>
+        <p style="color:blue; margin-left:10px; font-family: 'K24KurdishBold-Bold'; margin-right:10px; font-size:16px; text-align:right;">لە سالی خویندنی ( ٢٠٠٩ - ٢٠١٠) لە پەیمانگادا ئەم بەشە دامەزرا ، لەم سالەدا یەکەمین خولی دەرچوانی بە دامودەزگا تەندروستیەکانی کوردستانی کرد . ئامانج لێی پێگەیاندنی ستافیکی تەکنیک کاری تاقیگەیی پزیشکیە لە ماوەی خویندنی ئەم دوو سالە قوتابیان دەبنە خاوەن بروانامای  ( ی.تاقیگە) بە بروانامای دیبلۆم . دەرچوانی ئەم بەشە رۆلێکی گرینگیان هەیە لە بواری پشکنینی  تاقیگەیەکاندا .  قوتابیان لەم سالانەی خونێندیاندا وانەکان بە تیۆریی و پراکتیکی و سەردانیکردنی نەخۆشخانە فێرکاریەکان و گەشتی زاستی دەبیت . بۆ بە تەکنیکی بونی قوتابی و فیربوونی پشکنینەکان بە شیوەیەکی سەردەمیانە . وەرگرتنی زانیاری زیاتر و راهێنان لە سەر کارەکانیان . وە ئەنجام دانی خولی مەشقی هاوینەی دوو مانگە لە نەخۆشخانە فێرکاریەکان دوای  تەواوکردنی قوناغی دووەم بۆ تەواو بوونی پسپۆریان لەم بوارە </p>
+      `; 
+	  
+	  case '٣_  بەشی پەرستاری':
+      return `
+           
+                            <img class="img-fluid" src="images/nurse.jpg" alt="alternative" width="200"  style="border-radius:10px;">
+                  <br>
+                  <br>
+        <p style="color:blue; margin-left:10px; font-family: 'K24KurdishBold-Bold'; margin-right:10px; font-size:16px; text-align:right;">ئەم بەشە لە سالی ( ٢..٢) ز دامەزراوە . ئامانجی ئەم بەشە پێگەیاندنی پسپۆری شارەزایە لە پیشەی نەخۆشەوانی دا بۆ پێشکەش کردنی خزمەت گوزاریە تەندروستیەکان سەرارەی ئەمە هەماهەنگی تەواو لە گەڵ سەرجەم نەخۆشخانە و بنکە تەندروستیەکانی سۆران هەیە بۆ مەشق کردنی قوتابییان لەکاتی خویندن و مەشقی هاوینە.دەرچوانی ئەم بەشە شارەزایی تەواویان هەیە لە پیشەیی خۆیان و برین پێچی ، دەرزی لێدان ، دەرمان پێدان ، ئامادەکردنی نەخۆش بۆ نەشتەرگەری ، فریاکەوتنی سەرەتایی، چاودێریکردنی نەخۆش لە هۆلی نەخۆشخانەکان</p>
+      `; 
+	  
+	  case '٤_  بەشی ژمێریاری':
+      return `
+           
+                            <img class="img-fluid" src="images/accounting.jpg" alt="alternative" width="200"  style="border-radius:10px;">
+                  <br>
+                  <br>
+        <p style="color:blue; margin-left:10px; font-family: 'K24KurdishBold-Bold'; margin-right:10px; font-size:16px; text-align:right;">ئه‌م به‌شه‌ بۆ ساڵی خوێندنی (٢٠١١ - ٢٠١٢) له‌سه‌ر داوای ئه‌نجومه‌نی په‌یمانگای ته‌كنیكی سۆران و به‌ ره‌زامه‌ندی (ده‌سته‌ی خوێندنی ته‌كنیكی-هه‌وڵیر) كراوه‌ته‌وه‌ ، ئامانجی پێگه‌یاندنی كادیری ناوه‌ندیه‌ له‌ بواری ژمێریاری و پڕكردنه‌وه‌ی بۆشایی نه‌بوونی پسپۆڕی ژمێریاریه‌ له‌ داموده‌زگا میری و تایبه‌تیه‌كان، ده‌رچووانی دوای بینینی وانه‌ی تیۆری پراكتیكی له‌بابه‌ته‌كانی تایبه‌ت به‌ بنه‌ماو میتۆدو رێكاره‌كانی كاری ژمێریاری به‌ شێوه‌یه‌كی زانستی و به‌ پێی ستاندارد و دواین پێشكه‌وتنه‌كانی ئه‌و بواره‌، پاش دوو ساڵ بڕوانامه‌ی دیبلۆمیان پێده‌درێت. </p>
+      `;  
+	  case '٥_  بەشی تەکنەلۆجیای زانیاری':
+      return `
+           
+                            <img class="img-fluid" src="images/it.png" alt="alternative" width="200"  style="border-radius:10px;">
+                  <br>
+                  <br>
+        <p style="color:blue; margin-left:10px; font-family: 'K24KurdishBold-Bold'; margin-right:10px; font-size:16px; text-align:right;">ئامانج لێی پێگەیاندنی ستافیکی تەکنیکی و فێربوونی پرۆگرامەکانی کۆمپیوتەر و زمانەکانی کۆمپیوتەر لە ماوەی خویندنی ئەم دوو سالە قوتابیان دەبنە خاوەن بروانامای دیبلۆم . دەرچوانی ئەم بەشە رۆلێکی گرینگیان هەیە لە بواری دروست کردنی پرۆگرامەکان و کارکردنیان لە کۆمپانیا و کەنالەکان  . قوتابیان لەم سالانەی خونێندیاندا وانەکان بە تیۆریی و پراکتیکی و سەردانی کردنیان بۆ کەنالەکان و کۆلێژە تەکنەلۆژیایەکان . بۆ بە تەکنیکی بونی قوتابی و فیربوون و وەرگرتنی زانیاری زیاتر لە بوارەکەیان . وە ئەنجام دانی خولی مەشقی هاوینەی دوو مانگە دوای تەواوکردنی قوناغی دووەم بۆ  تەواو بوونی پسپۆریان لەم بوارە</p>
+      `;  
+	  case '٦_  بەشی کارگێری کار':
+      return `
+           
+                            <img class="img-fluid" src="images/bussniss.png" alt="alternative" width="200"  style="border-radius:10px;">
+                  <br>
+                  <br>
+        <p style="color:blue; margin-left:10px; font-family: 'K24KurdishBold-Bold'; margin-right:10px; font-size:16px; text-align:right;">له‌سه‌ر بڕیاری سه‌روكایه‌تی ده‌سته‌ی په‌یمانگا ته‌كنیكیه‌كان به‌شی بەرێوەبردنی كار له‌ ساڵی خوێندنی ( ٢٠٠٤ – ٢٠٠٥ ) كرایه‌وه‌، ئامانجی ئه‌م به‌شه‌ ئه‌وه‌یه‌ كه‌ بتوانی كۆمه‌ڵێك قوتابی پێبگه‌یه‌نێن وه‌ك كادیری به‌رێوبڕدن، پێشكه‌ش به‌ ره‌وتی به‌ره‌وپێش بردنی كۆمه‌ڵگای‌ كوردستان بكات. بێگومان كوردستان له‌ قوناغی ئاوادانكردنه‌وه‌و و گه‌شه‌كردندایه‌ پێو‌یستی به‌ كادیری لیهاتووی به‌رێوبڕدن هه‌یه‌، ده‌رچوانی ئه‌م به‌شه‌ شاره‌زایه‌كی ته‌واویان هه‌یه له‌ به‌ڕێوبردنی داموده‌زگاكانی میری و تایبه‌تی ده‌توانن سه‌رپه‌رشتی هه‌ر پرۆژه‌یه‌ك بكه‌ن بۆ ئه‌وه‌ی سه‌ركه‌وتوانه‌ به‌ڕێوه‌بچێت.</p>
+      `;
+    default:
+      return 'Information not available';
+  }
+}
+
+ 
+document.addEventListener('click', (event) => {
+  const isClickedOutsideItemList = !itemList.contains(event.target);
+  const isClickedOutsideInfoContainer = !infoContainer.contains(event.target);
+
+  if (isClickedOutsideItemList && isClickedOutsideInfoContainer) {
+    infoContainer.style.display = 'none';
+  }
+});
+
+
+</script> 
 </body>
 </html>
